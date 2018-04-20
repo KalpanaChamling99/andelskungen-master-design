@@ -1,0 +1,58 @@
+$color-primar: #063C6D;
+.#{$prefix}-podcast-desc{
+    padding: 4.375rem 0;
+    
+    @include media(lg){
+        padding: 0 0 1.875rem 0; 
+    }
+}
+.#{$prefix}-podcast-title{
+    h2{
+        font-size: 1.5625rem;
+        font-weight: 400;
+        margin-bottom: 0.8rem;
+        line-height: 1;
+    }
+
+}
+.#{$prefix}-podcast-link{
+    color: $color-primary;
+    font-size: 1rem;
+    font-weight: 600;
+    
+    a{
+        color: $color-primary;
+        text-decoration: none;  
+    }
+
+} 
+.#{$prefix}-podcast-image{
+    @include media(sm){
+        padding-right: 50px;
+    }
+    @include media(lg){
+        padding-right: initial;
+    }
+
+}
+ 
+.#{$prefix}-podcast-text{
+    padding: 1.5625rem 0 0 0;/*35px*/
+
+    ul{
+        margin: 1.5625rem 0 0 0;
+        list-style: none; 
+        li{
+            position: relative;
+            &:before{
+                position: absolute;
+                left: -1rem;
+                top: 0.5rem;
+                content: '\f111'; 
+                font-family: fontAwesome;
+                font-size: 0.5rem;
+                color: $color-primary;
+            }
+        }
+    }
+}

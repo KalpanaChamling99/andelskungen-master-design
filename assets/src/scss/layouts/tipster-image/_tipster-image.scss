@@ -1,0 +1,59 @@
+.#{$prefix}-img-wrappper{
+    padding:0 0.9375rem 2.5rem 0.9375rem;
+    float: left;
+    width: 33.33%;
+ 
+    @include media(sm){ 
+        width: 25%;
+    }
+     
+    @include media(md){
+        width: 20%;
+    }
+    @include media(lg){ 
+        width: 16.66%;;
+    }
+
+}
+
+  
+.#{$prefix}-tipster-image-section{
+
+    &:hover{
+        .img{
+            opacity: 0.1;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        &:hover{ 
+            .img,
+            p{
+                opacity: 1 !important;
+            }
+
+            p{
+                color: $color_primary;
+                font-weight: 600; 
+            }
+
+        }
+
+        p{
+            margin-top: 1.25rem;
+            font-size: 0.875rem;
+            margin-bottom: 0; 
+            color: $color_black;
+
+            @include media(sm){
+                font-size: 1rem;
+            }
+            &:hover{
+                color: $color_primary;
+                font-weight: 600;
+            }
+        }
+    }
+
+}

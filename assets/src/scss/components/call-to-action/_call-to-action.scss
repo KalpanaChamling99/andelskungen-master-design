@@ -1,0 +1,23 @@
+
+$color-white: #fff;
+
+.#{$prefix}-call-to-action {
+    text-align: center;
+
+    .#{$prefix}-wrapper {
+        background-color: $color-white;
+        display: inline-block;
+        padding: 1.2rem 1.5rem; 
+    }
+
+    span {
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 1.125rem;
+        color: $color_primary;
+        font-weight: $font-weight-semi-bold;
+        @include media(lg){
+             font-size: 1.25rem;
+        }
+    }
+}

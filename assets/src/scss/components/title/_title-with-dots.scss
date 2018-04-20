@@ -1,0 +1,59 @@
+$dot-width: 0.8rem;
+$color_primary: #063C6D;
+.#{$prefix}-title {
+    %span {
+        background: $color_primary;
+        border: 1px solid $color-primary;
+        border-radius: 50%;
+    }
+
+    h1 {
+        color: $color_primary;
+        font-size: 1.5625rem;
+        line-height: 1;
+        margin: 0;
+
+        @include media(sm){
+            font-size: 2.1875rem;
+        } 
+   
+    }
+
+    .#{$prefix}-dot {
+        position: relative;
+        width: $dot-width;
+        height: $dot-width;
+        margin-right: 1rem;
+        margin-left: 1.6rem;
+        background-color: $color-primary;
+        display: inline-block;
+
+        @include border-radius(50%);
+
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            right: calc( 100% + 3px);
+            width: 68%;
+            height: 70%;
+            background-color: $color-primary;
+
+            @include border-radius(50%);
+        }  
+
+        &:before {
+            content: "";
+            top: 3.5px;
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            right: calc(180% + 5px );
+            background-color: $color-primary;
+
+            @include border-radius(50%);
+        }
+    }
+}

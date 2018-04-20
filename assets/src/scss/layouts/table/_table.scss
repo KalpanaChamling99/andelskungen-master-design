@@ -1,0 +1,66 @@
+.#{$prefix}-table{
+
+    thead{
+        background-color: $color_primary;
+        color: $color_white;
+
+        th{
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            width: 100%;
+           
+           
+            @include media(sm){
+                display: table-cell;
+                width: initial;
+            }
+           
+        }
+    }
+    
+    tbody{
+        th,td{
+            width: 33.33%;
+            float: left;
+            border-top: none;
+            vertical-align: middle;
+
+            @include media(sm){
+                width: initial;
+                float: initial;
+                border-top: initial;
+            }
+
+        }
+       
+        th{
+            padding-left: 3.4375rem;/*55rem*/
+           
+            @include media(md){
+                padding-left: 2.8125rem;/*45rem*/
+            }
+             @include media(lg){
+                padding-left: 3.125rem;
+            }
+        }
+
+        td{
+            text-transform: capitalize;
+            font-size: 1rem;
+            font-weight: 600;
+
+            @include media(md){
+                padding-left: 2.5rem;
+            }
+
+            @include media(lg){
+                padding-left: 2.8125rem;
+            }
+           
+           
+        }
+
+    }
+
+}

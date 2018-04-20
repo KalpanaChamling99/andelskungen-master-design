@@ -1,0 +1,22 @@
+$color-primary: #063C6D;
+
+.primary-btn {
+    border: 1px solid $color_primary;
+    background: $color_primary;
+    border-radius: 3rem;
+    font-size: 1rem;
+    padding: 0 2rem; 
+    display: inline-block; 
+    color: $color_white;
+    line-height: 2.5;
+    font-weight: 600;
+    outline: transparent;
+    text-decoration: none; 
+    cursor: pointer;
+
+    &:hover{
+        color: $color_white;
+        background:darken( $color_primary, 5% );
+        outline: transparent;
+    }
+}

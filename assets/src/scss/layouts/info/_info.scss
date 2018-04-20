@@ -1,0 +1,64 @@
+%background{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+$color-white: #fff;
+
+.andels-info-section{
+    background-color: $color-white;
+    .ord-1{
+        order:2;
+        @include media(sm){
+            order: 1;
+        }
+      
+    }
+    .ord-2{
+        order: 1;
+        @include media(sm){
+            order: 2;
+        }
+    }
+} 
+.andels-info-content{
+    text-align: center;
+    padding: 2.8125rem 0;/*45px*/
+    @include media(lg){
+        padding: 4.375rem 0;
+    }
+    .andels-info-title{
+        h1{
+            @include media(sm){  
+                font-size: 22px;
+            }
+            @include media(md){
+                font-size: 2.1875rem; 
+            }
+        }
+    }
+   
+    .andels-info-desc{
+        padding: 3.125rem 0;/*50px*/
+        
+        p{
+            margin: 0; 
+            font-size: 1rem;
+            &:nth-child(2){
+                margin-bottom: 2.5rem;
+            }
+
+        }
+    }
+  
+} 
+
+.andels-info-image{ 
+   @extend %background;
+    padding: 50%;
+ 
+    @include media(sm){ 
+        padding: 0;
+    }
+ 
+}

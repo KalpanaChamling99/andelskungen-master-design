@@ -1,0 +1,92 @@
+$icon-width: 33px;
+$icon-height: 22px;
+$icon-animation: all 0.3s ease-in-out;
+$icon-toggle-class-name: open;
+$icon-label : Meny; 
+$color_primary: #063C6D;
+
+%m-icon-common {
+    width: 100%;
+    border-radius: 10px;
+    height: 4px;
+    background: $color_primary;
+}
+
+.#{$prefix}-menu-icon {
+    width: $icon-width;
+    height: $icon-height;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    &:before,
+    &:after{
+        position: absolute;
+    }
+
+    &:before {
+        content: "";
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        @extend %m-icon-common;
+    }
+    
+    &:after {
+        content: "#{$icon-label}"; 
+        top: 100%;
+        font-size: 0.9rem;
+        left: 50%;
+        color: $color_primary;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+
+    &.#{$icon-toggle-class-name} {
+        &:before {
+            display: none;
+        }
+
+        span {
+            &:after,
+            &:before {
+                top: 48%;
+                @include translate(0, -50%);
+            }
+
+            &:after {
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            
+            &:before {
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    } 
+
+    span {
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            -webtkit-transition: #{$icon-animation};
+            -moz-transition: #{$icon-animation};
+            transition: #{$icon-animation};
+            @extend %m-icon-common;
+        }
+
+        &:after {
+            top: 0;
+        }
+
+        &:before {
+            bottom: 0;
+        }
+    }
+}

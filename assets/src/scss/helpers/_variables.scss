@@ -1,0 +1,26 @@
+
+/* BASIC COLOR */
+$color-primary        : #063C6D !default;
+$color-secondary      : #161616 !default;
+$color-line           : #ffd700 !default;
+$color-white          : #fff !default;
+$color-black          : #000 !default;
+$color-success        : #6bc452 !default;
+$color-error          : #F04124 !default;
+
+/* FONTS */
+$font-primary   : 'Source Sans Pro';
+// $font-primary   : 'Montserrat';
+$font-secondary : 'merriweather';
+$font-awesome   : 'FontAwesome';
+$font-size      : 16px;
+
+/* FONT WEIGHT */
+$font-weight-light      : 300;
+$font-weight-normal     : 400;
+$font-weight-semi-bold  : 600; 
+$font-weight-bold       : 700;
+$font-weight-bolder     : 900;
+
+/* PREFIX */ 
+$prefix: 'andels';

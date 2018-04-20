@@ -1,0 +1,42 @@
+ $color_primary: #063C6D ;
+ $color_white: #fff;
+.#{$prefix}-buy-field{
+    display: inline-block;
+
+    @include media(sm){
+        background: $color-white;
+        padding: 1.25rem 2.5rem; 
+       
+    } 
+    @include media(lg){
+        padding: 1.25rem 3.75rem;
+    }   
+    .text{
+        color: $color-primary;
+        font-weight: 600;
+        display: none;
+        @include media(sm){
+            display: inline-block;
+            font-size: 1.2rem;
+            padding-right: 1.25rem;
+        }  
+
+        @include media(lg){
+            padding-right: 3.75rem;
+            font-size: 1.5625rem;
+
+        }
+    }
+    .desktop-link{
+        display: none;
+        @include media(sm){
+            display: inline-block; 
+        }
+    }
+    .mobile-link{
+        display: inline-block;
+        @include media(sm){
+            display: none;
+        }
+    }
+}

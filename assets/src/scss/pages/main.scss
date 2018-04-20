@@ -1,0 +1,62 @@
+@import 'common';
+
+$side-menu-width: 250px;
+$check-box-id : '#menu';
+
+#menu-section{
+    width: $side-menu-width;
+    background-color: rosybrown; 
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include transition( all 0.3s ease-in-out );
+}
+
+.pages-section{
+    margin-left: $side-menu-width; 
+    background-color: pink; 
+    @include transition( all 0.3s ease-in-out );
+}
+
+/* toggle animation */
+#{$check-box-id}{
+    &:checked{
+        ~ #menu-section{
+            left: - $side-menu-width;
+        }
+
+        ~ .pages-section{
+            margin-left: 0;
+
+            .#{$prefix}-menu-icon{
+
+                    &:before {
+                        display: none;
+                    }
+
+                    span {
+                        &:after,
+                        &:before {
+                            top: 48%;
+                            @include translate(0, -50%);
+                        }
+
+                        &:after {
+                            -webkit-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                        
+                        &:before {
+                            -webkit-transform: rotate(-45deg);
+                            -moz-transform: rotate(-45deg);
+                            transform: rotate(-45deg);
+                        }
+                    }
+
+            }
+        }
+    }
+}
+

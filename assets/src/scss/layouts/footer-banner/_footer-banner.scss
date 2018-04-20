@@ -1,0 +1,14 @@
+.andels-footer-banner{
+    padding: 2.5rem;
+    text-align: center;
+    h1{  
+        font-size: 1.5625rem;
+        color: $color_white;
+        @include media(xs){
+            font-size: 2.1875rem; 
+        }
+        @include media(sm){
+            font-size: 2.8125rem;/*45px*/
+        } 
+    } 
+} 
