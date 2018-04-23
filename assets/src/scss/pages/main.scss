@@ -5,18 +5,22 @@ $check-box-id : '#menu';
 
 #menu-section{
     width: $side-menu-width;
-    background-color: rosybrown; 
+    background-color: #063C6D; 
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     @include transition( all 0.3s ease-in-out );
+    overflow-y: scroll;
 }
 
 .pages-section{
     margin-left: $side-menu-width; 
-    background-color: pink; 
+    background-color: #FCFAFA; 
     @include transition( all 0.3s ease-in-out );
+}
+header{
+    padding: 8px 20px; 
 }
 
 /* toggle animation */

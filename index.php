@@ -1,115 +1,50 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Master Design</title>  
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="assets/build/css/vendor.css">
-        <link rel="stylesheet" href="assets/build/css/main.css">
-    </head>
 
-    <body>
-    <input type="checkbox" id="menu" hidden>
-        <div id='menu-section'>
-          
-        </div>
-
-        <div class="pages-section">
-            <header>
-                    <label for="menu">
-                        <div class="andels-menu-icon">
-                            <span></span>
-                        </div>     
-                    </label>
-                </span>
-            </header>
-            <!-- menu icon -->
-                <?php
-                    require 'components/menu-icon.php';
-                ?>
-            <!--/ menu icon -->
-
-            <!-- title -->
-                <?php
-                    require 'components/title.php';
-                ?>
-            <!-- title -->
-
-            <!-- call to action -->
-                <?php 
-                    require 'components/call-to-action.php';
-                ?>
-            <!-- /call to action -->
-
-            <!-- search field -->
-                <?php 
-                    require 'components/search-field.php';
-                ?>
-            <!-- search field -->
-
-            <!-- button -->
-                <?php 
-                    require 'components/button.php';
-                ?>
-            <!-- /button -->
-            
-            <!-- buy-field -->
-                <?php 
-                    require 'components/buy-field.php';
-                ?>
-            <!--/ buy-field -->
-
-            <!-- welcome-block -->
-                <?php
-                    require 'components/welcome-block.php';
-                ?>
-            <!-- /welcome-block -->
-
-            <!--info  -->
-                <?php 
-                    require 'layout/info.php';
-                ?>
-            <!--/info  -->
-
-            <!-- footer-banner -->
-                <?php
-                    require 'layout/footer-banner.php';
-                ?>
-            <!--/ footer-banner -->
-
-            <!-- tipster image -->
-                <?php
-                    require 'layout/tipster-image.php';
-                ?>
-            <!--/ tipster image -->
-
-            <!-- post -->
-                <?php
-                    require 'layout/post.php';
-                ?>
-            <!--/ post -->
-
-            <!-- podcast -->
-                <?php
-                    require 'layout/podcast.php';
-                ?>
-            <!-- /podcast -->
-
-            <!-- table -->
-                <?php
-                    require 'layout/table.php';
-                ?>
-            <!--/ table -->
-        </div>    
-
-            
-        <script src="assets/src/js/main.js"></script>
-    </body> 
+<?php
     
-</html>
+    //------------------header----------------//
+        require 'header.php';
+   
+    //-------------- menu-icon---------------//
+        require 'components/menu-icon.php';
+
+    //-------------------titlt--------------//
+        require 'components/title.php';
+
+    //--------------button---------------//
+        require 'components/button.php';    
+  
+    //-------------call-to-action-----------//
+        require 'components/call-to-action.php';
+    
+    //---------------search-field------------//
+        require 'components/search-field.php';
+
+    //---------------buy-field------------//
+        require 'components/buy-field.php';
+
+    //---------------welcome block-------------//
+        require 'components/welcome-block.php';
+
+
+    //-----------------footer banner-------//
+        require 'layout/footer-banner.php';
+
+    //---------------info------------------//
+        require 'layout/info.php';
+
+    //---------------podcast------------------//
+        require 'layout/podcast.php';
+
+    //---------------post------------------//
+        require 'layout/post.php';
+
+    //---------------table------------------//
+        require 'layout/table.php';
+
+    //---------------tipster image------------------//
+        require 'layout/tipster-image.php';
+
+    //----------------footer-----------------//
+        require 'footer.php';
+?>
+    

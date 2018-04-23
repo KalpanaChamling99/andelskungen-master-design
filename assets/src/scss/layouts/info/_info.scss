@@ -5,7 +5,7 @@
 }
 $color-white: #fff;
 
-.andels-info-section{
+.#{$prefix}-info-section{
     background-color: $color-white;
     .ord-1{
         order:2;
@@ -21,13 +21,13 @@ $color-white: #fff;
         }
     }
 } 
-.andels-info-content{
+.#{$prefix}-info-content{
     text-align: center;
     padding: 2.8125rem 0;/*45px*/
     @include media(lg){
         padding: 4.375rem 0;
     }
-    .andels-info-title{
+    .#{$prefix}-info-title{
         h1{
             @include media(sm){  
                 font-size: 22px;
@@ -38,7 +38,7 @@ $color-white: #fff;
         }
     }
    
-    .andels-info-desc{
+    .#{$prefix}-info-desc{
         padding: 3.125rem 0;/*50px*/
         
         p{
@@ -53,7 +53,7 @@ $color-white: #fff;
   
 } 
 
-.andels-info-image{ 
+.#{$prefix}-info-image{ 
    @extend %background;
     padding: 50%;
  

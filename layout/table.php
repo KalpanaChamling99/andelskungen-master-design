@@ -1,6 +1,7 @@
 
 <div class="container-fluid component">
-    <table class="table table-striped andels-table">
+    <h2 class='text-center' id='table'>Table</h2>
+    <table class="table table-striped evit-table">
         <thead>
             <tr>
                 <th scope="col">Match No.</th>

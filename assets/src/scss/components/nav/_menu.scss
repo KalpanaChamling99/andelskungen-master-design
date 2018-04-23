@@ -1,0 +1,32 @@
+ .#{$prefix}-menu{
+     ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+             &.active {
+                    a{
+                        background-color: $hover-menu-bg-color;
+                        color: $hover-menu-color;
+                    } 
+                }
+
+            a{
+                padding: $menu-padding;
+                font-size: $menu-font-size;
+                font-weight: $menu-font-weight;
+                text-transform: $menu-text-transform;
+                color: $menu-color;
+                text-decoration: none;
+                display: inline-block;
+                width: 100%;
+               
+                &:hover{
+                    background-color: $hover-menu-bg-color;
+                    color: $hover-menu-color;
+                }
+            }
+
+        }
+     }
+}

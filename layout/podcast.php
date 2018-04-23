@@ -1,8 +1,10 @@
+
 <div class="container-fluid">
     <div class="component">
-        <div class="andels-podcast-content">
+        <h2 class='text-center' id='podcast'>Podcast</h2>
+        <div class="evit-podcast-content">
             <div class="row">
-                <div class="col-xl-6 col-lg-12  andels-podcast-image">
+                <div class="col-xl-6 col-lg-12  evit-podcast-image">
                     <div class="embed-responsive embed-responsive-16by9">
                         <div class="container">
                             <iframe style="border: none;" src="//html5-player.libsyn.com/embed/episode/id/6370581/height/360/width/640/theme/legacy/autonext/no/thumbnail/yes/autoplay/no/preload/no/no_addthis/no/direction/backward/" width="640" height="360" scrolling="no" allowfullscreen="allowfullscreen">
@@ -14,18 +16,18 @@
                 <div class="col-xl-6 col-lg-12 ">
                     <div class="row">
                         <div class="col-12">
-                            <div class="andels-podcast-desc">
+                            <div class="evit-podcast-desc">
                                 <div class="container">
-                                    <div class="andels-podcast-title">
-                                        <h2>Andelskungens Podcast ÅBY 3/2 med Norinder, Brolin &amp; Krukan</h2>
+                                    <div class="evit-podcast-title">
+                                        <h2>evitkungens Podcast ÅBY 3/2 med Norinder, Brolin &amp; Krukan</h2>
                                     </div>
         
-                                    <div class="andels-podcast-link">
+                                    <div class="evit-podcast-link">
                                         <a href="#">18 Mar</a>,
                                         <span> eaglevision</span>
                                     </div>
         
-                                    <div class="andels-podcast-text">
+                                    <div class="evit-podcast-text">
                                         Micke Norinder och Chrille Krukan underhåller oss själva denna
                                         torsdag då Tomas Brolinbefinner sig i Paris.
                                         <ul>

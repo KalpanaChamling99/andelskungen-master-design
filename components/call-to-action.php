@@ -1,16 +1,18 @@
+
 <div class="container">
     <div class="component">
-        <div class="andels-call-to-action">
-            <div class="andels-wrapper"> 
+        <h2 class='text-center' id="call-to-action">Call to action</h2>
+        <div class="evit-call-to-action">
+            <div class="evit-wrapper"> 
                 <span>Öka dina chanser, spela tillsammans med Andelskungen.se</span>				
-                <a class="primary-btn" href="http://localhost/andelskungen ">Gå med nu </a>
+                <a class="primary-btn" href="#">Gå med nu </a>
             </div>
         </div>
     </div>
 </div>
 
 <div class="container">
-  <div class="file-location">
+    <div class="file-location">
         <h5>File location</h5>
         scss file :- assets/src/scss/component/call-to-action/call-to-action.scss<br/> 
         scss file :- assets/src/scss/component/buttons/primary-button.scss<br/> 

@@ -1,6 +1,8 @@
+
 <div class="container">
     <div class="component">
-        <div class="andels-buy-field">
+        <h2 class='text-center' id='buy-field'>Buy Field</h2>
+        <div class="evit-buy-field">
             <span class="text">
                 Increase your chances, play along with Tomas Oleby				
             </span>

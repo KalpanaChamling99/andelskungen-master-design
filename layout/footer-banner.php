@@ -1,5 +1,7 @@
+
 <div class="mt-5 text-center">
-    <div class="andels-footer-banner" style="background-image: url(http://202.166.198.46/andelskungen/wp-content/uploads/2018/03/Image-66@2x.png)">
+    <h2 class='text-center' id='footer-banner'>Footer Banner</h2>   
+    <div class="evit-footer-banner" style="background-image: url(http://202.166.198.46/andelskungen/wp-content/uploads/2018/03/Image-66@2x.png)">
         <div class="footer-banner-title">
             <h1><p>KÖP V75-ANDEL ONLINE<br>
                 VI GÖR JOBBET ÅT DIG!</p>
@@ -21,3 +23,4 @@
         Html file :layout/footer-banner.php<br/>
     </div>
 </div>
+

@@ -1,12 +1,12 @@
-<div class="component ">
 
+<div class="component ">
     <div class="container">
-        <div 
-         class="andels-tipster-image-section  clearfix">
+        <h2 class='text-center' id='tipster-image'>Tipster Image</h2>
+        <div class="evit-tipster-image-section  clearfix">
             <?php
                 for($i=0;$i<6;$i++){ 
             ?>
-                <div class="andels-img-wrappper text-center fade-in" style="animation-delay: 500ms;">
+                <div class="evit-img-wrappper text-center fade-in" style="animation-delay: 500ms;">
                     <a href="#">
                         <div class="img">
                             <img class="img-fluid" src="http://202.166.198.46/andelskungen/wp-content/uploads/2018/03/Image-4@2x-150x150.png">
@@ -15,7 +15,7 @@
                     </a>
                 </div>
                     
-                <div class="andels-img-wrappper text-center fade-in" style="animation-delay: 600ms;">
+                <div class="evit-img-wrappper text-center fade-in" style="animation-delay: 600ms;">
                     <a href="#">
                         <div class="img">
                             <img class="img-fluid" src="http://202.166.198.46/andelskungen/wp-content/uploads/2018/03/Image-5@2x-150x150.png">
@@ -24,7 +24,7 @@
                     </a>
                 </div>
                     
-                <div class="andels-img-wrappper text-center fade-in" style="animation-delay: 700ms;">
+                <div class="evit-img-wrappper text-center fade-in" style="animation-delay: 700ms;">
                     <a href="#">
                         <div class="img">
                             <img class="img-fluid" src="http://202.166.198.46/andelskungen/wp-content/uploads/2018/03/Image-5@2x-150x150.png">

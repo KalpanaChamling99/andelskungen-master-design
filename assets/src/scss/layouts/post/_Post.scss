@@ -2,7 +2,7 @@ $img-border-color: #f5f5f5;
 $color-primary: #063C6D;
 $color-dark-white: #FCFAFA;
 
-.andels-news-section{
+.#{$prefix}-news-section{
     background-color: $color-dark-white;
     
     .wrapper{
@@ -12,7 +12,7 @@ $color-dark-white: #FCFAFA;
             padding-left: 2.5rem;
         }
        
-        .andels-news-content{
+        .#{$prefix}-news-content{
             padding: 4.375rem 0;
             @include media(sm){
                 padding: 0 0 1.875rem 0;
@@ -22,19 +22,19 @@ $color-dark-white: #FCFAFA;
     }
 } 
 
-.andels-news-title{
+.#{$prefix}-news-title{
     h2{
         font-size: 1.25rem;
         line-height: 1;
         margin-bottom: 0.8rem; 
     } 
 }
-.andels-news-image{
+.#{$prefix}-news-image{
     img{
         border: 1px solid $img-border-color;
     }
 }
-.andels-news-date{
+.#{$prefix}-news-date{
     color: $color-primary;  
     font-size: 1rem;
     font-weight: 600;
@@ -44,13 +44,13 @@ $color-dark-white: #FCFAFA;
     } 
   
 }
-.andels-news-desc{
+.#{$prefix}-news-desc{
     p{
         margin-top: 1.875rem;/*35px*/
         margin-bottom: 0;
     }
 }
-.andels-news-link{
+.#{$prefix}-news-link{
     a{
         margin-top: 1.875rem;
     }

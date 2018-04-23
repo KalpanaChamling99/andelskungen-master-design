@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             },
             js: {
                 src: [
-                    './node_modules/bootstrap/dist/bootstrap.js',
+                    './node_modules/bootstrap/dist/js/bootstrap.js',
                 ],
                 dest: './assets/build/js/bootstrap.js' 
             }
